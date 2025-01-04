@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { PinPerspective } from "./PinPerspective";
@@ -31,7 +32,7 @@ export const PinContainer = ({ children, title, href, className, containerClassN
           style={{
             transform: transform,
           }}
-          className="absolute left-1/2 top-1/2 flex justify-start items-start p-4 rounded-2xl shadow-lg bg-black border border-white/10 transition duration-700"
+          className="absolute left-1/2 top-1/2 flex justify-start items-start p-4 rounded-2xl shadow-lg bg-white/10 backdrop-blur-sm border border-white/10 transition duration-700"
         >
           <div className={cn("relative z-50", className)}>{children}</div>
         </div>
