@@ -52,6 +52,12 @@ const Header = () => {
             Products
           </Link>
           <Link
+            href="/gallery"
+            className={activeLink === "/products" ? "activeLink" : "hover:text-gold"}
+          >
+            Gallery
+          </Link>
+          <Link
             href="/contact"
             className={activeLink === "/contact" ? "activeLink" : "hover:text-gold"}
           >

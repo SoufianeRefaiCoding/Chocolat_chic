@@ -1,5 +1,7 @@
 import About from "@/components/AboutUs";
+import AboutUsSection from "@/components/aboutusSection";
 import ClientsSection from "@/components/clients";
+import Footer from "@/components/Footer";
 import Header from "@/components/header";
 import Hero from "@/components/Hero";
 import ProductPinSection from "@/components/productPin/ProductPinSection";
@@ -9,10 +11,13 @@ export default function Home() {
     <div className=" ">
       <Header/>
     <Hero/>
-    <About/>
+    <AboutUsSection/>
+
+    {/* <About/> */}
     <ProductSection/>
     <ProductPinSection/>
     <ClientsSection/>
+    <Footer/>
     </div>
   );
 }
