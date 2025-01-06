@@ -100,7 +100,7 @@ const AboutUsSection = () => {
                         <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition duration-300"></div>
                     </div>
                 </motion.div>
-            </div>
+            </div>            
         </div>
     );
 };

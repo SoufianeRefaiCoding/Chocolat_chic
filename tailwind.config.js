@@ -1,6 +1,9 @@
 // tailwind.config.mjs
 export default {
-  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}", // Include all pages
+    "./components/**/*.{js,ts,jsx,tsx}", // Include all components
+  ],
   theme: {
     extend: {
       
