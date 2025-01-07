@@ -17,9 +17,7 @@ export default function Home() {
     <ProductSection/>
     <ProductPinSection/>
     <ClientsSection/>
-    <section className="bg-red-500 text-white py-20">
-  <h1 className="text-6xl font-bold">Test Tailwind</h1>
-</section>
+  
     <Footer/>
     </div>
   );
