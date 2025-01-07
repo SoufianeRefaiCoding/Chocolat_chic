@@ -64,7 +64,11 @@ const Header = () => {
             Contact
           </Link>
           <button className="bg-gold text-chocolate-900 font-cinzel py-2 px-6 rounded shadow hover:bg-chocolate-700 hover:text-gold transition-all">
-            Order Now
+          <Link
+            href="/order"
+          >
+            Order now
+          </Link>
           </button>
         </nav>
 
