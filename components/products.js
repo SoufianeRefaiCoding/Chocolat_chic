@@ -37,7 +37,7 @@ const products = [
 
 const ProductSection = () => {
     return (
-        <div className="bg-[radial-gradient(closest-side,_#2B2118,_#3E2C24)] py-16">
+        <div className="bg-[radial-gradient(closest-side,_#2B2118,_#3E2C24)] py-16" id="products">
             {/* Section Title */}
             <div className="text-center mb-12">
                 <motion.h2

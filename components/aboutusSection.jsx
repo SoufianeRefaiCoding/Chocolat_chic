@@ -10,7 +10,7 @@ import noisette from "@/public/assets/noisette.png";
 
 const AboutUsSection = () => {
     return (
-        <div className="bg-[radial-gradient(closest-side,_#2B2118,_#3E2C24)] py-16">
+        <div className="bg-[radial-gradient(closest-side,_#2B2118,_#3E2C24)] py-16" id="about-us">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 px-4 lg:px-16">
                 {/* Left Section: Text */}
                 <motion.div
