@@ -49,7 +49,7 @@ const Checkout = () => {
   // Function to send message to WhatsApp
   const sendToWhatsApp = () => {
     const message = createWhatsAppMessage();
-    const phoneNumber = '0612631518'; // Your WhatsApp number
+    const phoneNumber = '+212612631518'; // Your WhatsApp number
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, '_blank');
   };
