@@ -9,8 +9,7 @@ import galleryImage3 from "@/public/assets/Artboard9.png";
 import galleryImage4 from "@/public/assets/Artboard9.png";
 import galleryImage5 from "@/public/assets/Artboard9.png";
 import galleryImage6 from "@/public/assets/Artboard9.png";
-import Header from "@/components/header";
-import Footer from "@/components/Footer";
+
 
 const images = [
   galleryImage1,
@@ -25,7 +24,7 @@ const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (<>
-    <Header/>
+    
     <div className="bg-[radial-gradient(closest-side,_#2B2118,_#3E2C24)] text-white py-16">
       <div className="max-w-7xl mx-auto px-4">
         {/* Title */}
@@ -92,7 +91,6 @@ const GalleryPage = () => {
         )}
       </div>
     </div>
-    <Footer/>
     </>);
 };
 

@@ -1,6 +1,5 @@
 "use client";
-import Footer from "@/components/Footer";
-import Header from "@/components/header";
+
 import { useState } from "react";
 import React from "react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -15,7 +14,6 @@ const Contact = () => {
 
   return (
     <>
-      <Header />
       <section
 
         className="bg-no-repeat bg-cover bg-bottom py-20"
@@ -59,7 +57,6 @@ const Contact = () => {
 
 
       </section>
-      <Footer />
     </>
   );
 };

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useCart } from "react-use-cart";
 
 // Import your product images
 import product1 from "../public/assets/Artboard.png";
@@ -11,31 +12,37 @@ import product4 from "../public/assets/Artboard10.png";
 const products = [
     {
         id: 1,
-        image: product1,
+        image: "/assets/Artboard.png",
         title: "TASSE CAP",
-        description: "Votre logo, votre histoire, sur chaque chocolat. Imprimez l'emblème de votre restaurant sur ces chocolats exquis et décorez vos tasses, les transformant en une délicieuse extension de votre marque. Ce n'est pas seulement un dessert, c'est une déclaration",
+        description: "Votre logo, votre histoire, sur chaque chocolat. Imprimez l'emblème de votre restaurant sur ces chocolats exquis et décorez vos tasses, les transformant en une délicieuse extension de votre marque. ",
+        price: 99,
     },
     {
         id: 2,
-        image: product2,
+        image: "/assets/Artboard9.png",
         title: "ROUND LOPS",
-        description: "Faites plaisir à vos sens e t transformez chaque moment de repas en une symphonie de douceur grâce à notre chocolat de décoration ROUND LOOPS. Encouragez l e buzz sur les médias sociaux et l e marketing de bouche-a-oreille lorsque vos clients partagent leur expérience personnalisée du chocolat",
+        description: "Faites plaisir à vos sens e t transformez chaque moment de repas en une symphonie de douceur grâce à notre chocolat de décoration ROUND LOOPS. ",
+        price: 99,
     },
     {
         id: 3,
-        image: product3,
+        image: "/assets/Artboard12.png",
         title: "LA PLUME",
-        description: "Surprenez vos clients en leur offrant une douce marque de reconnaissance. Qu'il s'agisse d'une occasion spéciale ou d'un repas régulier, nos chocolats décoratifs portant votre logo constituent un plat à emporter mémorable qui laissera une impression durable",
+        description: "Surprenez vos clients en leur offrant une douce marque de reconnaissance. Qu'il s'agisse d'une occasion spéciale ou d'un repas régulier, nos chocolats décoratifs portant votre logo ",
+        price: 99,
     },
     {
         id: 4,
-        image: product4,
+        image: "/assets/Artboard10.png",
         title: "SPON BITE",
         description: "Chaque pièce témoigne de l'art de votre restaurant, faisant du dessert und élice visuel. créerune expérience inoubliable et personnalisée du dessert, Faites votre marque avec chaqu ebouchée!",
+        price: 99,
     },
 ];
 
 const ProductSection = () => {
+    const { addItem } = useCart();
+
     return (
         <div className="bg-[radial-gradient(closest-side,_#2B2118,_#3E2C24)] py-16" id="products">
             {/* Section Title */}
@@ -85,7 +92,7 @@ const ProductSection = () => {
                                 src={product.image}
                                 alt={product.title}
                                 layout="fill"
-                                objectFit="cover"
+
                                 className="rounded-lg"
                             />
                         </div>
@@ -97,6 +104,17 @@ const ProductSection = () => {
                         <p className="text-sm text-body-color text-center text-gray-700 leading-relaxed">
                             {product.description}
                         </p>
+                        <div className="mt-4 flex justify-between items-center">
+                                <span className="text-lg font-bold text-yellow-600">
+                                    ${product.price}
+                                </span>
+                                <button
+                                    onClick={() => addItem(product)}
+                                    className="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition"
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
                     </motion.div>
                 ))}
             </div>

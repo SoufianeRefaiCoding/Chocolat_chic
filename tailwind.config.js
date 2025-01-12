@@ -9,7 +9,7 @@ export default {
     extend: {
       
       fontFamily: {
-        cinzel: ["'Cinzel Decorative'", "serif"],
+        cinzel: ["'Cinzel'", "serif"],
         brittany: ["'Brittany Signature'", "cursive"],
         montserrat: ["Montserrat", "sans-serif"],
       },
