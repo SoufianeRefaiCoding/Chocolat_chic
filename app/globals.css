@@ -42,13 +42,7 @@
   scroll-behavior: smooth;
 }
 /* Add this to your global styles or main CSS file */
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  background: linear-gradient(to bottom, #1a0e0a, #3e1e16);
-  perspective: 1000px;
-}
+
 
 .animated-background {
   position: fixed;

@@ -36,7 +36,7 @@ const ProductPinSection = () => {
   ];
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden ">
       <div className=" py-16">
         <motion.h2
           className="font-cinzel text-4xl text-center text-gold mb-6 flex items-center justify-center"
@@ -60,7 +60,7 @@ const ProductPinSection = () => {
               alt="Noisette"
               width={40}
               height={40}
-              className="w-10 h-10 object-cover"
+              className="w-10 h-10 object-cover "
             />
           </motion.div>
         </motion.h2>
