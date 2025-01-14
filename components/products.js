@@ -9,7 +9,7 @@ const ProductSection = () => {
   const { addItem } = useCart();
 
   return (
-    <div className="bg-gradient-to-r from-chocolate-900 to-chocolate-800 py-16" id="products">
+    <div className=" py-16" id="products">
       {/* Section Title */}
       <div className="text-center mb-12">
         <motion.h2

@@ -20,7 +20,7 @@ const ClientsSection = () => {
   ];
 
   return (
-    <div className="bg-[radial-gradient(closest-side,_#2B2118,_#3E2C24)] py-16 overflow-hidden">
+    <div className="py-16 overflow-hidden">
       <h2 className="text-center text-gold font-cinzel text-4xl mb-8">Nos Clients</h2>
       <div className="text-white/60 text-center mb-8 text-body-color text-sm lg:text-base leading-relaxed max-w-3xl mx-auto">
         Nous sommes honorés de collaborer avec ces marques prestigieuses qui partagent notre passion pour la qualité et l'innovation.

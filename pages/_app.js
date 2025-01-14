@@ -4,6 +4,8 @@ import '../app/globals.css'; // Adjust the path based on your project structure
 import Header from '@/components/header';
 import Footer from "@/components/Footer";
 import { Geist, Geist_Mono } from "next/font/google";
+import { motion } from "framer-motion";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,13 +24,13 @@ function MyApp({ Component, pageProps }) {
 
 
   return( <>
-  <div className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-  <CartProvider id='products'>
+  <div className={`${geistSans.variable} ${geistMono.variable} antialiased parallax-effect bg-dark-chocolate-theme`}>
+  <CartProvider id='products' >
   <Header/>
   <Component {...pageProps} />
   </CartProvider>
   <Footer/>
-
+  
 </div></>)
 }
 

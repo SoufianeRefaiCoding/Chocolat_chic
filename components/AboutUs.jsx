@@ -6,7 +6,7 @@ import noisette from "../public/assets/noisette.png";
 
 const About = () => {
     return (<>
-        <div className="bg-[radial-gradient(closest-side,_#2B2118,_#3E2C24)] py-10 relative ">
+        <div className=" py-10 relative ">
             {/* Cadre (Frame) */}
             <div className="relative mx-auto max-w-4xl bg-white rounded-lg shadow-lg border-4 border-gold  pb-12">
                 {/* Top Image */}

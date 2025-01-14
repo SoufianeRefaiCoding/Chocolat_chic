@@ -37,7 +37,7 @@ const ProductPinSection = () => {
 
   return (
     <div className="overflow-hidden">
-      <div className="bg-[radial-gradient(closest-side,_#2B2118,_#3E2C24)] py-16">
+      <div className=" py-16">
         <motion.h2
           className="font-cinzel text-4xl text-center text-gold mb-6 flex items-center justify-center"
           initial={{ opacity: 0, y: -50 }}

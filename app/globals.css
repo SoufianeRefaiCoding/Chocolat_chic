@@ -18,3 +18,65 @@
 .hover-underline:hover::after {
   width: 100%;
 }
+.bg-dark-chocolate-theme {
+  background: linear-gradient(135deg, #2b2118, #3e2723, #5d4037, #4e342e);
+  background-size: 300% 300%;
+  animation: gradient-animation 8s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.parallax-effect {
+  background-attachment: fixed;
+  background-position: center;
+  scroll-behavior: smooth;
+}
+/* Add this to your global styles or main CSS file */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #1a0e0a, #3e1e16);
+  perspective: 1000px;
+}
+
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.scroll-animation {
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, #3e1e16, #1a0e0a, #0a0402);
+  animation: moveBackground 10s linear infinite;
+  transform: translateZ(-500px) scale(2);
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translate(-50%, -50%) translateZ(-500px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateZ(-500px) rotateX(30deg) rotateY(30deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateZ(-500px) rotateX(0deg) rotateY(0deg);
+  }
+}

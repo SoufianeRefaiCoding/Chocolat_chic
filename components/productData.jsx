@@ -40,6 +40,7 @@ const products = [
         "/assets/Artboard10.png",
         "/assets/gallery9.png",
       ],
+      category:"dark",
     },
     {
       id: 4,

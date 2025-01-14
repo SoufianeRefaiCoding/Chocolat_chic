@@ -88,8 +88,8 @@ const Header = () => {
           <Link href="/#about-us" className={getLinkClass("/#about-us")}>
             About Us
           </Link>
-          <Link href="/#products" className={getLinkClass("/#products")}>
-            Products
+          <Link href="/shop" className={getLinkClass("/shop")}>
+            shop
           </Link>
           <Link href="/gallery" className={getLinkClass("/gallery")}>
             Gallery
@@ -142,11 +142,11 @@ const Header = () => {
             About Us
           </Link>
           <Link
-            href="/#products"
-            className={`block px-4 py-3 ${getLinkClass("/#products")}`}
+            href="/shop"
+            className={`block px-4 py-3 ${getLinkClass("/shop")}`}
             onClick={() => setIsOpen(false)}
           >
-            Products
+            shop
           </Link>
           <Link
             href="/gallery"

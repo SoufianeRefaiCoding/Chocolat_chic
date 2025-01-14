@@ -33,6 +33,12 @@ const Hero = () => {
 
   return (
     <>
+    <motion.div
+    className="hero-section text-center"
+    initial={{ y: -100, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 1, type: "spring", stiffness: 50 }}
+  >
       <div className="py-24 relative overflow-clip bg-[linear-gradient(to_bottom,#2B2118,#3E2C24_35%,#523F34_60%,#2B2118_80%)]">
         {/* Chocolate Swimming Particles */}
         <div className={styles.chocolateParticles}>
@@ -112,6 +118,7 @@ const Hero = () => {
 
         </div>
       </div>
+      </motion.div>
     </>
   );
 };
