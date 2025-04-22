@@ -71,7 +71,7 @@ const Hero = () => {
           {/* Buttons Section */}
           <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
             <motion.a
-              href="https://nextjstemplates.com/templates/saas-starter-startup"
+              href="shop"
               whileHover={{
                 scale: 1.1,
                 boxShadow: "0px 4px 15px rgba(255, 215, 0, 0.4)",
@@ -82,7 +82,7 @@ const Hero = () => {
               🔥 Commande Now
             </motion.a>
             <motion.a
-              href="https://github.com/NextJSTemplates/startup-nextjs"
+              href="#"
               whileHover={{
                 scale: 1.1,
                 backgroundColor: "#3E2723",
